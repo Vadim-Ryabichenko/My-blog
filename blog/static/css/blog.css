@@ -1,0 +1,135 @@
+.imaged h1{
+    color: #3358ff;
+}
+
+.imaged h2{
+    color: #33FFEC;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.page-header {
+    background-image: url('istockphoto-1226478926-612x612.jpg');
+    padding: 10px 20px 20px 40px;
+    border: 1px solid black;
+    height: 90px;
+}
+
+.page-header h1 {
+    color: black;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.page-ender {
+    background-image: url('istockphoto-1226478926-612x612.jpg');
+    padding: 10px 20px 20px 40%;
+    border: 1px solid black;
+    height: 90px;
+}
+.page-ender h1 {
+    color: black;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: auto;
+}
+
+.imaged {
+    background-image: url('dark-background.jpg');
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_instagram {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: black;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 6px;
+    color: white;
+    position: relative;
+    top: -55px;
+    left: 190px;
+}
+
+.social_telegram {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: black;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 6px;
+    color: white;
+    position: relative;
+    top: -55px;
+    left: 200px;
+}
+
+.first_button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    left: 280px;
+    font-family: 'Lobster', cursive;
+    margin-top: -55px;
+}
+
+.first_button {border-radius: 50%;}
+
+a{
+    text-decoration: none;
+}
+
+.ppp {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 30px 90px;
+}
+
+.rrr {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding-top: 30px;
+}
+
+.date{
+    color:  white;
+    padding-left: 90%;
+}
+
+.post{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.post p{
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+}

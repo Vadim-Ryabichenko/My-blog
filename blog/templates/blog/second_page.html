@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="ppp">
+{% for post in posts %}
+        <div class="rrr">
+        {% if post.image %} 
+        <img src="{{ post.image.url }}" height="200" width="300" style="border: 4mm ridge rgba(50, 220, 178, 0.699)">
+        {% endif %}
+        <a href="{% url 'post_detail' pk=post.pk %}"><h1>{{ post.title }}</h1></a>
+        </div>    
+{% endfor %}
+</div> 
+{% endblock %}
