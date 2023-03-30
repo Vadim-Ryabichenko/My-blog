@@ -23,7 +23,7 @@
 
 .page-ender {
     background-image: url('istockphoto-1226478926-612x612.jpg');
-    padding: 10px 20px 20px 40%;
+    padding: 10px 20px 20px 42%;
     border: 1px solid black;
     height: 90px;
 }
@@ -40,7 +40,7 @@ h1 {
 
 .imaged {
     background-image: url('dark-background.jpg');
-    height: 100%;
+    height: calc(100vh - 780px);
     flex: 1 1 auto;
 }
 
@@ -51,6 +51,7 @@ h1 {
 }
 
 .social_instagram {
+    color: white;
     text-align: center;
     width: 48px;
     height: 48px;
@@ -59,13 +60,13 @@ h1 {
     border: 1px solid black;
     border-radius: 24px;
     padding: 6px;
-    color: white;
     position: relative;
-    top: -55px;
-    left: 190px;
+    top: -100px;
+    left: -610px;
 }
 
 .social_telegram {
+    color: white;
     text-align: center;
     width: 48px;
     height: 48px;
@@ -74,10 +75,17 @@ h1 {
     border: 1px solid black;
     border-radius: 24px;
     padding: 6px;
-    color: white;
     position: relative;
-    top: -55px;
-    left: 200px;
+    top: -100px;
+    left: -600px;
+}
+.creator{
+  color: black;
+  position: relative;
+  top: -50px;
+  left: -700px;
+  text-shadow: rgb(89, 0, 255) 0 -2px;
+  font-size: 20px;
 }
 
 .first_button {
@@ -91,15 +99,15 @@ h1 {
     font-size: 20px;
     position: relative;
     top: -40px;
-    left: 280px;
+    left: 250px;
     font-family: 'Lobster', cursive;
     margin-top: -55px;
 }
 
 .first_button {border-radius: 50%;}
 
-a{
-    text-decoration: none;
+.a{
+  text-decoration: none;
 }
 
 .ppp {
@@ -132,4 +140,80 @@ a{
     color: white;
     font-size: 20px;
     font-style: oblique;
+}
+
+.gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #ef9ea5 0%, #4830F0 51%, #efee9e 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    position: relative;
+    top: -40px;
+    margin-top: -55px;
+    margin-left: 85%;
+  }
+  .gradient-button:hover {
+    background-position: right center;
+  }
+
+  .post-form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+  .poss{
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  .hello{
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: auto;
+  }
+  .hello h1{
+    font-size: 50px;
+    margin-left: 350px;
+    width: 60%
+    
+  }
+  .hello h2{
+    font-size: 30px; 
+    width: 80%;
+    text-align: center;
+    text-shadow: 1px 1px 2px pink;
+  }
+  .hello h3{
+    color: #3358ff;
+    font-size: 50px;
+    margin-left: 150px;
+    font-family: 'Lobster', cursive;
+    width: 60%
+  }
+
+  .tetx-shadow{
+    text-shadow: red 0 -2px;
+  }
+
+  .p{
+    padding: 6px;
+    position: relative;
+    top: -55px;
+    left: 500px;
+  }
+
+.carusel{
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

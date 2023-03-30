@@ -8,14 +8,15 @@
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>My blog</title>
+        <title>Blog</title>
     </head>
     <body>
       <div class="wrapper">
         <header class="page-header">
-            <h1>This is my blog</h1>
+            <h1>Fitness - blog</h1>
               <div>
-                <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
+                  <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
+                  <a href="{% url 'post_new' %}" class="gradient-button">Add Post</a>
               </div>
         </header>
           <div class="imaged">
@@ -23,13 +24,14 @@
               {% endblock %}
           </div>
         <header class="page-ender">
-            <a href = "{% url 'second_page' %}", target = "blank"><h1>About me</h1></a>
-              <div class="social_instagram">
+            <a href = "{% url 'second_page' %}", target = "blank"><h1>All Posts</h1></a>
+            <div class = "creator"><p>Creator</p></div>
+            <div class="social_instagram">
                   <a href="https://www.instagram.com/vremby_4595/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-              </div>
-              <div class="social_telegram">
+            </div>
+            <div class="social_telegram">
                   <a href="https://t.me/VRem" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
-              </div>
+            </div>
         </header>
       </div>
     </body>
