@@ -40,7 +40,7 @@ h1 {
 
 .imaged {
     background-image: url('dark-background.jpg');
-    height: calc(180vh - 780px);
+    min-height: calc(100vh - 180px);
     flex: 1 1 auto;
 }
 
