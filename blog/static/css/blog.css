@@ -218,3 +218,8 @@ h1 {
   margin-right: auto;
   margin-top: 20px;
 }
+
+.actions{
+  padding-left: 90%;
+  padding-bottom: 20px;
+}
