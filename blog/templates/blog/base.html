@@ -16,23 +16,30 @@
             <h1>Fitness - blog</h1>
               <div>
                   <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
-                  <a href="{% url 'post_new' %}" class="gradient-button">Add Post</a>
               </div>
         </header>
           <div class="imaged">
-              {% block content %}
-              {% endblock %}
+            {% if messages %}
+        	      {% for message in messages %}
+          	    <div class="alert alert-{{ message.tags }}">
+            	  {{ message }}
+          	    </div>
+        	      {% endfor %}
+            {% endif %}
+            {% block content %}
+            {% endblock %}
           </div>
-        <header class="page-ender">
-            <a href = "{% url 'second_page' %}", target = "blank"><h1>All Posts</h1></a>
-            <div class = "creator"><p>Creator</p></div>
-            <div class="social_instagram">
+        <footer class="page-ender">
+          <a href = "{% url 'second_page' %}" class = "fotter", target = "blank"><h1>All Posts</h1></a>
+            <a href="{% url 'post_new' %}" class="gradient-button">Add</a>
+              <div class = "creator"><p>Creator</p></div>
+              <div class="social_instagram">
                   <a href="https://www.instagram.com/vremby_4595/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="social_telegram">
+              </div>
+              <div class="social_telegram">
                   <a href="https://t.me/VRem" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
-            </div>
-        </header>
+              </div>
+            </footer>
       </div>
     </body>
 </html>

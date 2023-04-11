@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-owhg3_t9_*zm^_qnt&=&#q8unh97_#62*7@ad0*x_p@w1ne0(-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'localhost']
 
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'users.apps.UsersConfig',
+	'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = 'first_page'
 LOGOUT_REDIRECT_URL = "signup"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
