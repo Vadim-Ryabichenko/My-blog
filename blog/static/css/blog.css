@@ -233,3 +233,24 @@ a {
   color: hsl(160, 23%, 95%) !important;
   text-decoration: none;
 }
+
+.border-bottom{
+  margin-top: 60px;
+}
+
+.crisp{
+  width: 700px;
+}
+
+.crisp_login{
+  width: 700px;
+}
+
+.log{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.logout{
+  width: 700px;
+}

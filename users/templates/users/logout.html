@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class = "logout">
+    <div class = "log"><h1>You go out from your account</h1></div>
+    <h2>If you wonna restert to push "Sign in"</h2>
+    <div class="border-top pt-3">
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit"><a href="{% url 'login' %}">Sign in</a></button>
+        </div>
+    </div>
+</div>
+{% endblock content %}

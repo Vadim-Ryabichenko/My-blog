@@ -31,7 +31,9 @@
           </div>
         <footer class="page-ender">
           <a href = "{% url 'second_page' %}" class = "fotter", target = "blank"><h1>All Posts</h1></a>
+          {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="gradient-button">Add</a>
+          {% endif %}
               <div class = "creator"><p>Creator</p></div>
               <div class="social_instagram">
                   <a href="https://www.instagram.com/vremby_4595/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
