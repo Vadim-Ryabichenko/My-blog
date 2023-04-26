@@ -16,6 +16,8 @@
 }
 
 .page-header h1 {
+    display: inline-block;
+    width: 300px;
     color: black;
     font-size: 36pt;
     text-decoration: none;
@@ -89,19 +91,16 @@ h1 {
 }
 
 .first_button {
+    display: inline-block;
+    width: 70px;
     background-color: black;
     border: none;
     color: white;
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-    position: relative;
-    top: -40px;
-    left: 250px;
     font-family: 'Lobster', cursive;
-    margin-top: -55px;
 }
 
 .first_button {border-radius: 50%;}
@@ -154,9 +153,9 @@ h1 {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
     position: relative;
-    margin-left: 89%;
+    margin-left: 75%;
     margin-top: -65px;
-    margin-right: 30px;
+    margin-right: 55px;
   }
 
   .fotter{
@@ -254,3 +253,18 @@ a {
 .logout{
   width: 700px;
 }
+
+.first_button_2 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+}
+
+.first_button_2 {border-radius: 50%;}
