@@ -12,14 +12,23 @@
     </head>
     <body>
       <div class="wrapper">
-        <header class="page-header">
-            <h1>Fitness - blog</h1>
-              <div>
-                  <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
-              </div>
-              <div>
-                  <a href="{% url 'login' %}"><button class="first_button_2">Log in</button></a>
-              </div>
+        <header class="page-header", style="display: flex; justify-content: space-between">
+            <div>
+              <h1>Fitness - blog</h1>
+            </div>
+            <div>
+              <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
+            </div>
+            <div style = "display:flex"> 
+            <div>
+              <a href="{% url 'login' %}"><h2>Log in</h2></a>
+            </div>
+            <div class = "vl">
+            </div>
+            <div>
+              <a href="{% url 'register' %}"><h2>Registration</h2></a>
+            </div>
+            </div> 
         </header>
           <div class="imaged">
             {% if messages %}

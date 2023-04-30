@@ -13,11 +13,11 @@
     padding: 10px 20px 20px 40px;
     border: 1px solid black;
     height: 90px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .page-header h1 {
-    display: inline-block;
-    width: 300px;
     color: black;
     font-size: 36pt;
     text-decoration: none;
@@ -38,6 +38,13 @@
 h1 {
     font-family: 'Lobster', cursive;
     margin-bottom: auto;
+}
+
+.page-header h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 25pt;
+  text-decoration: none;
+  color: pink;
 }
 
 .imaged {
@@ -101,6 +108,7 @@ h1 {
     text-decoration: none;
     font-size: 20px;
     font-family: 'Lobster', cursive;
+    margin-left: 15px;
 }
 
 .first_button {border-radius: 50%;}
@@ -250,21 +258,7 @@ a {
   margin-bottom: 50px;
 }
 
-.logout{
-  width: 700px;
+.vl{
+  border-left: 6px solid black;
+  height: 45px;
 }
-
-.first_button_2 {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  width: 70px;
-  display: inline-block;
-  font-size: 20px;
-  font-family: 'Lobster', cursive;
-}
-
-.first_button_2 {border-radius: 50%;}
