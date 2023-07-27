@@ -10,11 +10,11 @@
 
 .page-header {
     background-image: url('istockphoto-1226478926-612x612.jpg');
-    padding: 10px 20px 20px 40px;
     border: 1px solid black;
     height: 90px;
     display: flex;
     flex-wrap: nowrap;
+    padding: 1em;
 }
 
 .page-header h1 {
@@ -25,9 +25,9 @@
 
 .page-ender {
     background-image: url('istockphoto-1226478926-612x612.jpg');
-    padding: 10px 20px 20px 42%;
     border: 1px solid black;
     height: 90px;
+    padding: 1em;
 }
 .page-ender h1 {
     color: black;
@@ -68,10 +68,7 @@ h1 {
     background: black;
     border: 1px solid black;
     border-radius: 24px;
-    padding: 6px;
-    position: relative;
-    top: -115px;
-    left: -610px;
+    padding-top: 5px;
 }
 
 .social_telegram {
@@ -83,22 +80,15 @@ h1 {
     background: black;
     border: 1px solid black;
     border-radius: 24px;
-    padding: 6px;
-    position: relative;
-    top: -115px;
-    left: -600px;
+    padding-top: 5px;
 }
 .creator{
   color: black;
-  position: relative;
-  top: -60px;
-  left: -700px;
   text-shadow: rgb(89, 0, 255) 0 -2px;
   font-size: 20px;
 }
 
 .first_button {
-    display: inline-block;
     width: 70px;
     background-color: black;
     border: none;
@@ -109,6 +99,7 @@ h1 {
     font-size: 20px;
     font-family: 'Lobster', cursive;
     margin-left: 15px;
+    margin-top: 10px;
 }
 
 .first_button {border-radius: 50%;}
@@ -147,11 +138,8 @@ h1 {
 
 .gradient-button {
     text-decoration: none;
-    display: flex;
-    justify-content: left;
     color: white;
     padding: 20px 30px;
-    margin: 10px 20px;
     border-radius: 10px;
     font-family: 'Lobster', cursive;
     text-transform: uppercase;
@@ -160,10 +148,6 @@ h1 {
     background-size: 100% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
-    position: relative;
-    margin-left: 75%;
-    margin-top: -65px;
-    margin-right: 55px;
   }
 
   .fotter{
@@ -260,5 +244,11 @@ a {
 
 .vl{
   border-left: 6px solid black;
-  height: 45px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.fl{
+  border-left: 6px solid black;
+  height: 40px;
 }

@@ -12,23 +12,25 @@
     </head>
     <body>
       <div class="wrapper">
-        <header class="page-header", style="display: flex; justify-content: space-between">
+        <header class="page-header" style="display: flex; justify-content: space-between; align-items: center;">
+          <div  class = "tyt" style="display: flex">
             <div>
               <h1>Fitness - blog</h1>
             </div>
             <div>
               <a href="{% url 'first_page' %}"><button class="first_button">Home</button></a>
             </div>
-            <div style = "display:flex"> 
-            <div>
+          </div>
+          <div class = "mym" style="display: flex;">
+            <div> 
               <a href="{% url 'login' %}"><h2>Log in</h2></a>
             </div>
-            <div class = "vl">
-            </div>
+            <div class = "vl"></div>
+            <div class = "fl"></div>
             <div>
               <a href="{% url 'register' %}"><h2>Registration</h2></a>
             </div>
-            </div> 
+          </div>
         </header>
           <div class="imaged">
             {% if messages %}
@@ -41,19 +43,31 @@
             {% block content %}
             {% endblock %}
           </div>
-        <footer class="page-ender">
-          <a href = "{% url 'second_page' %}" class = "fotter", target = "blank"><h1>All Posts</h1></a>
-          {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="gradient-button">Add your post</a>
-          {% endif %}
-              <div class = "creator"><p>Creator</p></div>
-              <div class="social_instagram">
-                  <a href="https://www.instagram.com/vremby_4595/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-              </div>
-              <div class="social_telegram">
-                  <a href="https://t.me/VRem" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
-              </div>
-            </footer>
+        <footer class="page-ender" style="display: flex; justify-content: space-between; align-items: center;">
+          <div  class = "kyk" style="display: flex">
+            <div class = "creator">
+              <p>Creator</p>
+            </div>
+            <div class="social_instagram">
+              <a href="https://www.instagram.com/vremby_4595/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="social_telegram">
+              <a href="https://t.me/VRem" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+            </div>
+          </div>
+          <div  class = "lyl" style="display: flex">
+            <div>
+              <a href = "{% url 'second_page' %}" class = "fotter", target = "blank"><h1>All Posts</h1></a>
+            </div>
+          </div>
+          <div  class = "ryr" style="display: flex">
+            <div>
+              {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="gradient-button">Add your post</a>
+              {% endif %}
+            </div>
+          </div>
+        </footer>
       </div>
     </body>
 </html>
